@@ -1,0 +1,2 @@
+#!/bin/bash
+for f in `ls *-data-only.sql`; do psql ${f%-data-only.sql} < $f; done
